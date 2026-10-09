@@ -3,202 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 東京/橫濱/河口湖 楓紅銀杏秋日饗宴 (優雅餘裕版)</title>
+    <title>2026 東京/橫濱/河口湖 楓紅銀杏美食散策 (終極版)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 自訂平滑捲動與微調字體 */
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Helvetica Neue', Arial, 'LiHei Pro', '微軟正黑體', sans-serif; }
+        .bg-autumn { background-image: linear-gradient(rgba(30, 20, 10, 0.7), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1542640244-7e672d6cef21?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center; }
+    </style>
 </head>
-<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+<body class="bg-stone-50 text-stone-800 antialiased">
 
     <!-- 橫幅 Header -->
-    <header class="relative bg-cover bg-center h-[400px] flex items-center justify-center text-center shadow-xl" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.45)), url('https://images.unsplash.com/photo-1542640244-7e672d6cef21?auto=format&fit=crop&w=1200&q=80');">
+    <header class="bg-autumn h-[420px] flex items-center justify-center text-center shadow-xl">
         <div class="p-6">
-            <span class="text-amber-400 font-bold tracking-widest text-sm uppercase block mb-3">
-                <i class="fa-solid fa-leaf text-red-500 mr-1"></i> 2026.11.24 - 11.30 尊享企劃
+            <span class="inline-block px-3 py-1 bg-red-700/80 text-white font-bold tracking-widest text-xs uppercase rounded-full mb-4 shadow-sm">
+                <i class="fa-solid fa-leaf mr-1"></i> 2026.11.24 - 11.30 尊享企劃
             </span>
-            <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4 drop-shadow-md">東京．橫濱 秋日慢遊散策</h1>
-            <p class="text-stone-200 text-base md:text-lg max-w-2xl mx-auto font-medium leading-relaxed">
-                4晚新宿華盛頓 • 2晚橫濱定點<br>
-                <span class="text-amber-300 text-sm">導入「1-2小時必休」機制，為夫妻倆打造最無負擔的優雅步調</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4 drop-shadow-lg">東京．橫濱 秋日慢遊散策</h1>
+            <p class="text-stone-200 text-base md:text-lg max-w-2xl mx-auto font-medium leading-relaxed drop-shadow-md">
+                4晚新宿定點 • 2晚橫濱港灣<br>
+                <span class="text-amber-300 font-bold mt-2 inline-block">落實「大人的餘裕」— 每 1~2 小時高質感休息 ＋ 嚴選景觀美食</span>
             </p>
+            <div class="mt-6">
+                <span class="inline-block px-4 py-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full text-white text-sm font-light">
+                    <i class="fa-solid fa-plane-departure mr-1"></i> 去程：高雄 (KHH) ➔ 成田 (NRT) | 回程：13:20 起飛
+                </span>
+            </div>
         </div>
     </header>
 
+    <!-- 主要內容區 -->
     <main class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-12 gap-8">
         
-        <!-- 左側：住宿與備用景點庫 (佔 4 欄) -->
+        <!-- 左側：住宿與交通心法 (佔 4 欄) -->
         <aside class="lg:col-span-4 space-y-6">
             
-            <!-- 住宿分配摘要 -->
+            <!-- 住宿配置 -->
             <section class="bg-stone-900 text-white rounded-2xl p-6 shadow-lg">
                 <h2 class="text-xl font-bold border-b border-stone-700 pb-3 mb-4 flex items-center text-amber-400">
-                    <i class="fa-solid fa-bed mr-2"></i> 飯店與住宿動線
+                    <i class="fa-solid fa-hotel mr-2"></i> 飯店住宿配置
                 </h2>
                 <div class="space-y-4 text-sm">
-                    <div class="flex items-start justify-between bg-white/10 p-3 rounded-xl border border-white/10">
-                        <div>
-                            <p class="font-bold text-amber-200">第 1-4 晚：新宿華盛頓飯店</p>
-                            <p class="text-xs text-stone-300 mt-1">✓ 利木津巴士直達，免拖行李</p>
-                            <p class="text-xs text-stone-300 mt-1">✓ 逛累了隨時搭短程計程車回防休息</p>
-                        </div>
+                    <div class="bg-white/10 p-4 rounded-xl border border-white/10 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-amber-600 text-xs font-bold px-2 py-1 rounded-bl-lg">4 晚</div>
+                        <p class="font-bold text-amber-200 text-base">新宿華盛頓飯店</p>
+                        <p class="text-xs text-stone-300 mt-1">11/24 (二) ~ 11/27 (五)</p>
+                        <ul class="mt-2 space-y-1 text-xs text-stone-300">
+                            <li><i class="fa-solid fa-check text-green-400 mr-1"></i> 利木津巴士直達，免拖行李</li>
+                            <li><i class="fa-solid fa-check text-green-400 mr-1"></i> 定點 4 晚，免換飯店疲勞</li>
+                        </ul>
                     </div>
-                    <div class="flex items-start justify-between bg-white/10 p-3 rounded-xl border border-white/10">
-                        <div>
-                            <p class="font-bold text-red-200">第 5-6 晚：橫濱朋友家</p>
-                            <p class="text-xs text-stone-300 mt-1">✓ 週末移師橫濱，避開市區人潮</p>
-                        </div>
+                    <div class="bg-white/10 p-4 rounded-xl border border-white/10 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-bl-lg">2 晚</div>
+                        <p class="font-bold text-red-200 text-base">橫濱朋友家</p>
+                        <p class="text-xs text-stone-300 mt-1">11/28 (六) ~ 11/29 (日)</p>
+                        <ul class="mt-2 space-y-1 text-xs text-stone-300">
+                            <li><i class="fa-solid fa-check text-green-400 mr-1"></i> 週末避開市區人潮，走訪鎌倉</li>
+                        </ul>
                     </div>
                 </div>
             </section>
 
-            <!-- 彈性備用景點庫 -->
-            <section class="bg-amber-50 rounded-2xl p-6 shadow-sm border border-amber-200">
-                <h2 class="text-xl font-bold border-b border-amber-200 pb-3 mb-4 flex items-center text-stone-900">
-                    <i class="fa-solid fa-map-location-dot text-amber-600 mr-2"></i> 彈性備用景點庫
+            <!-- 交通與預約提醒 -->
+            <section class="bg-white rounded-2xl p-6 shadow-sm border border-stone-200">
+                <h2 class="text-xl font-bold border-b border-stone-200 pb-3 mb-4 flex items-center text-stone-900">
+                    <i class="fa-regular fa-calendar-check text-red-600 mr-2"></i> 關鍵預約時間表
                 </h2>
-                <p class="text-xs text-stone-500 mb-4">若當天體力充沛或想轉換心情，可隨時替換：</p>
                 <ul class="space-y-4 text-sm text-stone-700">
-                    <li class="bg-white p-3 rounded-lg shadow-sm">
-                        <strong class="text-stone-900 block mb-1"><i class="fa-solid fa-torii-gate text-red-600 mr-1"></i> 淺草寺雷門 (淺草)</strong>
-                        <p class="text-xs text-stone-600">傳統下町風情。可作為 Day 2 的備案（若不想去六義園），附近有極多老字號咖啡廳（如：珈琲天國）可隨時坐下休息。</p>
+                    <li class="flex items-start">
+                        <div class="bg-amber-100 text-amber-800 rounded px-2 py-1 text-xs font-bold mr-3 mt-0.5 whitespace-nowrap">10/24前</div>
+                        <div>預訂 Day 1 晚餐 <strong class="text-stone-900">敘敘苑燒肉 (Opera City 53F)</strong></div>
                     </li>
-                    <li class="bg-white p-3 rounded-lg shadow-sm">
-                        <strong class="text-stone-900 block mb-1"><i class="fa-solid fa-tree text-green-600 mr-1"></i> 日比谷公園</strong>
-                        <p class="text-xs text-stone-600">鄰近丸之內與銀座。若 Day 4 在丸之內還有餘裕，可散步至此欣賞古老銀杏與「松本樓」的歷史氛圍。</p>
+                    <li class="flex items-start">
+                        <div class="bg-red-100 text-red-800 rounded px-2 py-1 text-xs font-bold mr-3 mt-0.5 whitespace-nowrap">10/26 早上</div>
+                        <div>
+                            <strong class="text-red-700 block">【極重要】搶河口湖車票</strong>
+                            預訂 Day 3 (11/26) 的 <strong>JR 特急富士回遊</strong>。若沒搶到，請立刻改訂高速巴士。
+                        </div>
+                    </li>
+                    <li class="flex items-start pt-3 border-t border-stone-100">
+                        <i class="fa-solid fa-taxi text-amber-500 text-lg mr-3 mt-1"></i>
+                        <div>
+                            <strong class="text-stone-900 block">計程車防守策略</strong>
+                            去河口湖當天早上，請用 <strong>GO APP</strong> 叫短程計程車前往新宿站/Busta，花小錢買極大舒適度。
+                        </div>
                     </li>
                 </ul>
             </section>
         </aside>
 
         <!-- 右側：每日詳細行程表 (佔 8 欄) -->
-        <section class="lg:col-span-8 space-y-6">
-            <h2 class="text-2xl font-bold text-stone-900 flex items-center mb-4 border-l-4 border-red-700 pl-3">
-                每日節奏與休息點配置
-            </h2>
-
+        <section class="lg:col-span-8 space-y-8">
+            
             <!-- Day 1 -->
-            <article class="bg-white rounded-2xl shadow-sm border border-stone-200/80 overflow-hidden">
-                <div class="p-5 border-b border-stone-100 flex justify-between items-center bg-stone-100">
+            <article class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden">
+                <div class="p-4 sm:p-6 border-b border-stone-100 bg-stone-100 flex items-center">
+                    <span class="px-3 py-1 bg-stone-600 text-white font-bold text-xs rounded uppercase mr-3">Day 1</span>
                     <div>
-                        <span class="px-2 py-1 bg-stone-500 text-white font-bold text-xs rounded-md mr-2">Day 1</span>
-                        <span class="text-stone-500 text-sm font-medium">11/24 (二) 【宿：新宿】</span>
-                        <h3 class="text-lg font-bold text-stone-900 mt-1">抵達與安頓 ➔ 迎賓璀璨夜景</h3>
+                        <span class="text-stone-500 text-sm font-medium">11/24 (週二) 【宿：新宿華盛頓】</span>
+                        <h3 class="text-xl font-bold text-stone-900 mt-1">抵達安頓 ➔ 迎賓璀璨夜景</h3>
                     </div>
                 </div>
-                <div class="p-5 space-y-3">
-                    <p class="text-stone-600 text-sm"><strong class="text-stone-800">14:00 - 16:30</strong> 抵達成田 ➔ 利木津巴士直達飯店。</p>
-                    <div class="bg-green-50 p-2.5 rounded-lg text-sm flex items-start border border-green-100">
-                        <i class="fa-solid fa-mug-hot text-green-700 mt-0.5 mr-2"></i>
-                        <span><strong>【休息 1】</strong> 飯店 Check-in 後，在房間稍作梳洗，平躺休息 1 小時恢復體力。</span>
+                <div class="p-4 sm:p-6 space-y-4">
+                    <p class="text-sm text-stone-700 leading-relaxed">
+                        <span class="inline-block bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs font-bold mr-1">14:00</span> 抵達成田機場後，直接購買 <strong>利木津巴士</strong> 直達飯店門口，免拖行李。<br>
+                        <span class="inline-block bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs font-bold mr-1 mt-2">18:00</span> 步行至飯店旁 <strong>東京都廳展望台</strong> 看免費百萬夜景。
+                    </p>
+                    <div class="bg-green-50/80 p-3 rounded-lg border border-green-200 flex items-start">
+                        <i class="fa-solid fa-mug-hot text-green-700 mt-1 mr-3"></i>
+                        <p class="text-sm text-stone-800"><strong>【休息】</strong> Check-in 後，在房間稍作梳洗，平躺休息 1 小時恢復體力再出門。</p>
                     </div>
-                    <p class="text-stone-600 text-sm"><strong class="text-stone-800">18:00 - 20:00</strong> 步行至旁的 <strong>東京都廳展望台</strong> 看夜景，隨後於西新宿享用晚餐。</p>
+                    <div class="bg-orange-50/80 p-3 rounded-lg border border-orange-200">
+                        <p class="text-sm font-bold text-orange-900 mb-1"><i class="fa-solid fa-utensils mr-2"></i>晚餐安排</p>
+                        <p class="text-sm text-stone-700"><strong>🏆 首選：</strong>敘敘苑燒肉 (Opera City 53 樓) - 高空夜景頂級和牛。<br>
+                        <strong>🛡️ 備選：</strong>釣船茶屋 ざうお (新宿華盛頓 1F) - 飯店樓下，累了直接吃。</p>
+                    </div>
                 </div>
             </article>
 
             <!-- Day 2 -->
-            <article class="bg-white rounded-2xl shadow-sm border border-stone-200/80 overflow-hidden">
-                <div class="p-5 border-b border-stone-100 flex justify-between items-center bg-stone-100">
+            <article class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden">
+                <div class="p-4 sm:p-6 border-b border-stone-100 bg-stone-100 flex items-center">
+                    <span class="px-3 py-1 bg-stone-600 text-white font-bold text-xs rounded uppercase mr-3">Day 2</span>
                     <div>
-                        <span class="px-2 py-1 bg-stone-500 text-white font-bold text-xs rounded-md mr-2">Day 2</span>
-                        <span class="text-stone-500 text-sm font-medium">11/25 (三) 【宿：新宿】</span>
-                        <h3 class="text-lg font-bold text-stone-900 mt-1">黃金隧道散步 ➔ 江戶庭園夜楓</h3>
+                        <span class="text-stone-500 text-sm font-medium">11/25 (週三) 【宿：新宿華盛頓】</span>
+                        <h3 class="text-xl font-bold text-stone-900 mt-1">黃金隧道 ➔ 午後雙備案自由選</h3>
                     </div>
                 </div>
-                <div class="p-5 space-y-3">
-                    <p class="text-stone-600 text-sm"><strong class="text-stone-800">10:00 - 11:30</strong> 地鐵至青山一丁目 ➔ 漫步 <strong>明治神宮外苑銀杏</strong>。</p>
-                    <div class="bg-green-50 p-2.5 rounded-lg text-sm flex items-start border border-green-100">
-                        <i class="fa-solid fa-mug-hot text-green-700 mt-0.5 mr-2"></i>
-                        <span><strong>【休息 1】</strong> 11:30 於銀杏樹下的 <strong>Shake Shack</strong> 坐下吃漢堡喝飲料，歇腳 1 小時。</span>
+                <div class="p-4 sm:p-6 space-y-4">
+                    <p class="text-sm text-stone-700 leading-relaxed">
+                        <span class="inline-block bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs font-bold mr-1">上午</span> 新宿站搭大江戶線至「青山一丁目站」，漫步 <strong>明治神宮外苑</strong> 黃金銀杏並木。
+                    </p>
+                    <!-- 午餐與休息 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-green-50/80 p-3 rounded-lg border border-green-200 flex items-start">
+                            <i class="fa-solid fa-mug-hot text-green-700 mt-1 mr-2"></i>
+                            <p class="text-sm text-stone-800"><strong>【上午休息】</strong> 外苑 Shake Shack 坐下歇腳 1 小時。</p>
+                        </div>
+                        <div class="bg-orange-50/80 p-3 rounded-lg border border-orange-200">
+                            <p class="text-sm font-bold text-orange-900"><i class="fa-solid fa-utensils mr-1"></i> 午餐安排</p>
+                            <p class="text-xs text-stone-700 mt-1"><strong>🏆 首選：</strong>Shake Shack 漢堡<br><strong>🛡️ 備選：</strong>Royal Garden Cafe 青山</p>
+                        </div>
                     </div>
-                    <p class="text-stone-600 text-sm"><strong class="text-stone-800">14:00 - 15:30</strong> 搭地鐵至駒込站 ➔ <strong>六義園</strong> 賞日落楓紅。</p>
-                    <div class="bg-green-50 p-2.5 rounded-lg text-sm flex items-start border border-green-100">
-                        <i class="fa-solid fa-mug-hot text-green-700 mt-0.5 mr-2"></i>
-                        <span><strong>【休息 2】</strong> 15:30 進入園內的 <strong>吹上茶屋</strong>，坐在池畔喝抹茶配和菓子，等待夜間點燈。</span>
+                    
+                    <!-- 雙備案區塊 -->
+                    <div class="mt-4 border border-stone-200 rounded-xl overflow-hidden">
+                        <div class="bg-stone-800 text-white p-2 text-center text-sm font-bold tracking-widest">👇 午後請依當天心情選擇路線 👇</div>
+                        
+                        <!-- 方案 A -->
+                        <div class="p-4 border-b border-stone-200">
+                            <h4 class="font-bold text-red-700 mb-2"><i class="fa-solid fa-map-location-dot mr-1"></i> 方案 A：江戶庭園夜楓線</h4>
+                            <p class="text-sm text-stone-700 mb-2">搭地鐵至駒込站，進入 <strong>六義園</strong> 欣賞日落庭園楓紅與夜間點燈。</p>
+                            <div class="bg-stone-50 p-2 rounded text-sm text-stone-700">
+                                ☕ <strong>休息：</strong>園內「吹上茶屋」喝抹茶配和菓子。<br>
+                                🍽️ <strong>晚餐 (返新宿)：</strong>🏆 名代豬排 かつくら (高島屋14F) / 🛡️ 築地玉壽司。
+                            </div>
+                        </div>
+                        
+                        <!-- 方案 B -->
+                        <div class="p-4 bg-stone-50/50">
+                            <h4 class="font-bold text-blue-700 mb-2"><i class="fa-solid fa-tower-broadcast mr-1"></i> 方案 B：鐵塔與六本木燈海線 (免轉車)</h4>
+                            <p class="text-sm text-stone-700 mb-2">搭大江戶線至大門站看 <strong>增上寺與東京鐵塔</strong>；傍晚直達六本木看 <strong>櫸坂通聖誕燈飾</strong>。</p>
+                            <div class="bg-stone-50 p-2 rounded text-sm text-stone-700 border border-stone-200">
+                                ☕ <strong>休息：</strong>芝公園「Le Pain Quotidien」喝拿鐵。<br>
+                                🍽️ <strong>晚餐 (六本木)：</strong>🏆 豚組食堂 / 🛡️ AFURI 柚子鹽拉麵。
+                            </div>
+                        </div>
                     </div>
                 </div>
             </article>
 
             <!-- Day 3 -->
-            <article class="bg-white rounded-2xl shadow-sm border border-stone-200/80 overflow-hidden">
-                <div class="p-5 border-b border-stone-100 flex justify-between items-center bg-stone-100">
+            <article class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden relative">
+                <div class="absolute top-0 right-0 bg-red-700 text-white text-xs font-bold px-3 py-1 rounded-bl-lg shadow-sm">富士大景</div>
+                <div class="p-4 sm:p-6 border-b border-stone-100 bg-red-50 flex items-center">
+                    <span class="px-3 py-1 bg-red-700 text-white font-bold text-xs rounded uppercase mr-3">Day 3</span>
                     <div>
-                        <span class="px-2 py-1 bg-stone-500 text-white font-bold text-xs rounded-md mr-2">Day 3</span>
-                        <span class="text-stone-500 text-sm font-medium">11/26 (四) 【宿：新宿】</span>
-                        <h3 class="text-lg font-bold text-stone-900 mt-1">河口湖富士山與紅葉迴廊</h3>
+                        <span class="text-stone-500 text-sm font-medium">11/26 (週四) 【宿：新宿華盛頓】</span>
+                        <h3 class="text-xl font-bold text-red-900 mt-1">富士大景 ➔ 河口湖紅葉迴廊</h3>
                     </div>
                 </div>
-                <div class="p-5 space-y-3">
-                    <p class="text-stone-600 text-sm"><strong class="text-stone-800">07:30 - 09:30</strong> 飯店搭計程車至 Busta新宿 ➔ 巴士直達河口湖 (車上補眠)。</p>
-                    <p class="text-stone-600 text-sm"><strong class="text-stone-800">10:00 - 11:30</strong> 漫步 <strong>楓葉迴廊</strong> 拍紅葉地毯。</p>
-                    <div class="bg-green-50 p-2.5 rounded-lg text-sm flex items-start border border-green-100">
-                        <i class="fa-solid fa-mug-hot text-green-700 mt-0.5 mr-2"></i>
-                        <span><strong>【休息 1】</strong> 11:30 於美術館旁的 <strong>久保田一竹美術館咖啡廳</strong> 喝咖啡看庭園，讓雙腿休息。</span>
+                <div class="p-4 sm:p-6 space-y-4">
+                    <p class="text-sm text-stone-700 leading-relaxed">
+                        <span class="inline-block bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs font-bold mr-1">早上</span> 飯店搭計程車 (約5分) 出發。首選搭乘 <strong>JR 特急「富士回遊」</strong> 直達河口湖；備選為 Busta 新宿高速巴士。<br>
+                        <span class="inline-block bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs font-bold mr-1 mt-2">上午</span> 轉周遊巴士至 <strong>楓葉迴廊</strong> 漫步；午後至 <strong>大石公園</strong> 看富士全景。
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-green-50/80 p-3 rounded-lg border border-green-200">
+                            <p class="text-sm text-stone-800"><strong>【休息】</strong> 於楓葉迴廊旁的 <strong>久保田一竹美術館咖啡廳</strong> 喝咖啡看庭園歇腳。</p>
+                        </div>
+                        <div class="bg-orange-50/80 p-3 rounded-lg border border-orange-200">
+                            <p class="text-sm font-bold text-orange-900 mb-1"><i class="fa-solid fa-utensils mr-1"></i> 午餐安排 (河口湖)</p>
+                            <p class="text-xs text-stone-700"><strong>🏆 首選：ほうとう不動</strong> - 榻榻米上吃熱呼呼蔬菜鐵鍋烏龍麵，暖胃首選。</p>
+                        </div>
                     </div>
-                    <p class="text-stone-600 text-sm"><strong class="text-stone-800">12:30 - 14:00</strong> 搭公車至 <strong>大石公園</strong> 看富士山全景。</p>
-                    <div class="bg-green-50 p-2.5 rounded-lg text-sm flex items-start border border-green-100">
-                        <i class="fa-solid fa-mug-hot text-green-700 mt-0.5 mr-2"></i>
-                        <span><strong>【休息 2】</strong> 14:00 午餐前往 <strong>不動ほうとう</strong>，坐在榻榻米上吃熱呼呼的鐵鍋烏龍麵，徹底放鬆後再搭車回新宿。</span>
+                    <div class="bg-stone-50 p-3 rounded-lg border border-stone-200 text-sm">
+                        <p class="font-bold text-stone-800 mb-1">🍽️ 晚餐安排 (返回新宿)</p>
+                        <p class="text-stone-700"><strong>🏆 首選：</strong>鍋ぞう Nabezo (新宿三丁目店) - 壽喜燒吃到飽。<br>
+                        <strong>🛡️ 備選：</strong>利久牛舌 (新宿 LUMINE EST) - 炭烤牛舌定食。</p>
                     </div>
                 </div>
             </article>
 
-            <!-- Day 4 (全新日本橋與丸之內散策) -->
-            <article class="bg-amber-50/40 rounded-2xl shadow-sm border border-amber-200/80 overflow-hidden relative">
-                <div class="absolute top-0 right-0 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">完美動線優化</div>
-                <div class="p-5 border-b border-amber-100 flex justify-between items-center">
+            <!-- Day 4 -->
+            <article class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden">
+                <div class="p-4 sm:p-6 border-b border-stone-100 bg-amber-50/50 flex items-center">
+                    <span class="px-3 py-1 bg-amber-600 text-white font-bold text-xs rounded uppercase mr-3">Day 4</span>
                     <div>
-                        <span class="px-2 py-1 bg-amber-600 text-white font-bold text-xs rounded-md mr-2 shadow-sm">Day 4</span>
-                        <span class="text-stone-600 text-sm font-medium">11/27 (五) 【宿：新宿最後一晚】</span>
-                        <h3 class="text-lg font-bold text-stone-900 mt-1">日本橋質感散策 ➔ 丸之內歐風之夜</h3>
+                        <span class="text-stone-500 text-sm font-medium">11/27 (週五) 【宿：新宿最後一晚】</span>
+                        <h3 class="text-xl font-bold text-stone-900 mt-1">日本橋質感散策 ➔ 丸之內歐風之夜</h3>
                     </div>
                 </div>
-                <div class="p-5 space-y-3">
-                    <p class="text-stone-600 text-sm"><strong class="text-stone-800">09:30 - 11:00</strong> 新宿搭地鐵至本鄉三丁目 ➔ 漫步 <strong>東京大學</strong> 百年銀杏。</p>
-                    <p class="text-stone-600 text-sm"><strong class="text-stone-800">11:30 - 13:00</strong> 轉地鐵至 <strong>日本橋</strong> ➔ 午餐吃著名的 <strong>花山烏龍麵</strong> (排隊時可輪流至旁邊的三越本館逛逛)。</p>
-                    <p class="text-stone-600 text-sm"><strong class="text-stone-800">13:30 - 14:30</strong> 漫步日本橋商圈 (COREDO室町誠品生活、三越)。</p>
-                    <div class="bg-green-50 p-2.5 rounded-lg text-sm flex items-start border border-green-100">
-                        <i class="fa-solid fa-mug-hot text-green-700 mt-0.5 mr-2"></i>
-                        <span><strong>【休息 1】</strong> 14:30 前往兜町的 <strong>K5 咖啡</strong> 或 <strong>teal</strong> 坐下品嚐巧克力冰淇淋與手沖咖啡。隨後可順路逛 <strong>bank 麵包店</strong> 買明天的早餐。</span>
+                <div class="p-4 sm:p-6 space-y-4">
+                    <p class="text-sm text-stone-700 leading-relaxed">
+                        <span class="inline-block bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs font-bold mr-1">上午</span> 漫步 <strong>東京大學本鄉校區</strong> 百年銀杏。<br>
+                        <span class="inline-block bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs font-bold mr-1 mt-2">下午</span> 逛日本橋 COREDO 室町，散步至兜町文青商圈。<br>
+                        <span class="inline-block bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-xs font-bold mr-1 mt-2">傍晚</span> 漫步東京車站 <strong>丸之內行幸通與仲通 (Nakadori)</strong> 聖誕燈飾。
+                    </p>
+                    <div class="bg-green-50/80 p-3 rounded-lg border border-green-200">
+                        <p class="text-sm text-stone-800"><strong>【午後休息】</strong> 兜町的 <strong>K5 咖啡</strong> 或 <strong>teal</strong> 品嚐巧克力冰淇淋與手沖咖啡。隨後可逛 bank 麵包店。</p>
                     </div>
-                    <p class="text-stone-600 text-sm"><strong class="text-stone-800">16:00 - 17:00</strong> 搭地鐵至東京站 ➔ 漫步 <strong>丸之內行幸通</strong> 與 <strong>仲通 (Nakadori)</strong> 感受聖誕燈飾與歐風街道。</p>
-                    <div class="bg-green-50 p-2.5 rounded-lg text-sm flex items-start border border-green-100">
-                        <i class="fa-solid fa-mug-hot text-green-700 mt-0.5 mr-2"></i>
-                        <span><strong>【休息 2】</strong> 17:00 進入三菱一號館美術館內的 <strong>Cafe 1894</strong>，在古典銀行金庫改建的華麗空間中喝杯晚茶/晚餐，完美結束這回合。</span>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-orange-50/80 p-3 rounded-lg border border-orange-200">
+                            <p class="text-sm font-bold text-orange-900 mb-1"><i class="fa-solid fa-utensils mr-1"></i> 午餐 (日本橋)</p>
+                            <p class="text-xs text-stone-700"><strong>🏆 首選：</strong>花山烏龍麵 (寬扁麵)<br><strong>🛡️ 備選：</strong>伊勢定 (三越百貨內鰻魚飯)</p>
+                        </div>
+                        <div class="bg-orange-50/80 p-3 rounded-lg border border-orange-200">
+                            <p class="text-sm font-bold text-orange-900 mb-1"><i class="fa-solid fa-utensils mr-1"></i> 晚餐 (丸之內)</p>
+                            <p class="text-xs text-stone-700"><strong>🏆 首選：</strong>Cafe 1894 (三菱美術館內)<br><strong>🛡️ 備選：</strong>根室花丸 (KITTE大樓迴轉壽司)</p>
+                        </div>
                     </div>
                 </div>
             </article>
 
             <!-- Day 5 -->
-            <article class="bg-red-50/40 rounded-2xl shadow-sm border border-red-200/80 overflow-hidden relative">
-                <div class="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">轉換住宿</div>
-                <div class="p-5 border-b border-red-100 flex justify-between items-center">
+            <article class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden relative">
+                <div class="absolute top-0 right-0 bg-blue-700 text-white text-xs font-bold px-3 py-1 rounded-bl-lg shadow-sm">移師橫濱</div>
+                <div class="p-4 sm:p-6 border-b border-stone-100 bg-blue-50 flex items-center">
+                    <span class="px-3 py-1 bg-blue-700 text-white font-bold text-xs rounded uppercase mr-3">Day 5</span>
                     <div>
-                        <span class="px-2 py-1 bg-red-700 text-white font-bold text-xs rounded-md mr-2 shadow-sm">Day 5</span>
-                        <span class="text-stone-600 text-sm font-medium">11/28 (六) 【宿：橫濱朋友家】</span>
-                        <h3 class="text-lg font-bold text-stone-900 mt-1">新宿御苑晨走 ➔ 移師橫濱港灣</h3>
-                    </div>
-                </div>
-                <div class="p-5 space-y-3">
-                    <p class="text-stone-600 text-sm"><strong class="text-stone-800">09:30 - 11:30</strong> 退房寄放行李 ➔ 散步 <strong>新宿御苑</strong> 看大草坪與秋色。</p>
-                    <div class="bg-green-50 p-2.5 rounded-lg text-sm flex items-start border border-green-100">
-                        <i class="fa-solid fa-mug-hot text-green-700 mt-0.5 mr-2"></i>
-                        <span><strong>【休息 1】</strong> 11:30 於新宿御苑內的 <strong>星巴克景觀門市</strong> 坐下休息，遠眺湖景。</span>
-                    </div>
-                    <p class="text-stone-600 text-sm"><strong class="text-stone-800">14:00 - 16:00</strong> 新宿站搭乘 <strong>JR 湘南新宿線 (加購綠色車廂自由座一路安穩坐著)</strong> ➔ 直達橫濱入住朋友家。</p>
-                    <p class="text-stone-600 text-sm"><strong class="text-stone-800">17:00 - 19:00</strong> 傍晚搭車至 <strong>橫濱紅磚倉庫</strong> 吃晚餐看夜景。</p>
-                </div>
-            </article>
-
-            <!-- Day 6 -->
-            <article class="bg-white rounded-2xl shadow-sm border border-stone-200/80 overflow-hidden">
-                <div class="p-5 border-b border-stone-100 flex justify-between items-center bg-stone-100">
-                    <div>
-                        <span class="px-2 py-1 bg-stone-500 text-white font-bold text-xs rounded-md mr-2">Day 6</span>
-                        <span class="text-stone-500 text-sm font-medium">11/29 (日) 【宿：橫濱朋友家】</span>
-                        <h3 class="text-lg font-bold text-stone-900 mt-1">鎌倉古都初楓 ➔ 江之電看海</h3>
-                    </div>
-                </div>
-                <div class="p-5 space-y-3">
-                    <p class="text-stone-600 text-sm"><strong class="text-stone-800">09:30 - 11:30</strong> 橫濱搭 JR 至北鎌倉 ➔ 參拜 <strong>圓覺寺/明月院</strong>。</p>
-                    <div class="bg-green-50 p-2.5 rounded-lg text-sm flex items-start border border-green-100">
-                        <i class="fa-solid fa-mug-hot text-green-700 mt-0.5 mr-2"></i>
-                        <span><strong>【休息
+                        <span class="text-stone-500 text-sm font-medium">11/28 (週六) 【宿：橫濱朋友家】</span>
+                        <h3 class="text-xl font-bold text-stone-900 mt-1">新宿御苑晨走
